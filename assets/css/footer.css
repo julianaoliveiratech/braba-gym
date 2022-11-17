@@ -1,0 +1,105 @@
+.copyright {
+    background-color: var(--fundo-secao-copyright);
+}
+
+.copyright__texto {
+    font-size: 0.75em;
+    font-weight: 500;
+    color: var(--cor-da-fonte-secao-copyright);
+    text-align: center;
+    padding: 1em;
+}
+
+.informacoes {
+    background-color: var(--fundo-informacoes);
+}
+
+.informacoes__creditos {
+    font-size: 0.60em;
+    font-weight: 500;
+    color: var(--cor-da-fonte-secao-informacoes);
+    text-align: center;
+    padding: 1em;
+}
+
+.informacoes__link {
+    text-decoration: none;
+    color: var(--cor-do-link-secao-informacoes);
+    font-weight: 700;
+}
+
+.informacoes__link:hover {
+    text-decoration: none;
+    color: var(--cor-do-link-secao-informacoes-hover);
+    font-weight: 700;
+}
+
+.rodape {
+    background-color: var(--fundo-rodape);
+}
+
+.rodape__caixa {
+    display: grid;
+    grid-template-columns: 100%;
+    justify-content: center;
+    text-align: center;
+    padding: 0 0 1em 0;
+}
+
+.rodape__texto {
+    color: var(--cor-da-fonte-rodape-texto);
+    font-size: 0.85em;
+    font-weight: 500;
+    padding: 2em 2em 1em 2em;
+}
+
+.rodape__link-icones {
+    margin: 0 0.25em;
+    text-decoration: none;
+}
+
+.bi-instagram {
+    fill: var(--cor-dos-icones-rodape);
+}
+
+.bi-instagram:hover {
+    opacity: 0.6;
+    transition: ease-in-out 0.5s;
+    -o-transition: all 0.6s ease;
+    -moz-transition: all 0.6s ease;
+    -webkit-transition: all 0.6s ease;
+}
+
+.bi-twitter {
+    fill: var(--cor-dos-icones-rodape);
+}
+
+.bi-twitter:hover {
+    opacity: 0.6;
+    transition: ease-in-out 0.5s;
+    -o-transition: all 0.6s ease;
+    -moz-transition: all 0.6s ease;
+    -webkit-transition: all 0.6s ease;
+}
+
+.bi-tiktok {
+    fill: var(--cor-dos-icones-rodape);
+}
+
+.bi-tiktok:hover {
+    opacity: 0.6;
+    transition: ease-in-out 0.5s;
+    -o-transition: all 0.6s ease;
+    -moz-transition: all 0.6s ease;
+    -webkit-transition: all 0.6s ease;
+}
+
+@media screen and (min-width: 1024px) {
+    .rodape__caixa {
+        display: grid;
+        grid-template-columns: 33%;
+        justify-content: right;
+        text-align: center;
+        padding: 0 0 1em 0;
+    }
+}

@@ -1,0 +1,52 @@
+.barra-superior {
+    background-color: var(--fundo-da-barra-superior);
+}
+
+.barra-superior__caixa {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: center;
+}
+
+.barra-superior__estilo-logo {
+    width: 10.0em;
+}
+
+.barra-superior__logo {
+    display: flex;
+    grid-template-columns: 33%;
+    justify-content: right;
+    padding: 0 1em 0 0;
+}
+
+.barra-superior__logo_desktop {
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+    .barra-superior {
+        background-color: var(--fundo-da-barra-superior);
+        display: grid;
+        grid-template-columns: 50% 50%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .barra-superior__estilo-logo {
+        width: 10.0em;
+    }
+
+    .barra-superior__logo {
+        display: none;
+    }
+
+    .barra-superior__caixa {
+        display: none;
+    }
+
+    .barra-superior__logo_desktop {
+        display: grid;
+        grid-template-columns: 33%;
+        justify-content: right;
+    }
+}

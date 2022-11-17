@@ -1,0 +1,7 @@
+/* Seleção Colorida */
+
+::selection { background: #161616; color: #e53993;
+}
+
+::-moz-selection { background: #161616; color: #e53993;
+}

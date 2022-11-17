@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('../css/header.css');
+@import url('../css/menu.css');
+@import url('../css/banner.css');
+@import url('../css/selecao-colorida.css');
+@import url('../css/planos.css');
+@import url('../css/localizacao.css');
+@import url('../css/scrollbar.css');
+@import url('../css/footer.css');
+@import url('../css/contato.css');
+@import url('../js/back-to-top.js');
+
+:root {
+    --fundo-principal: #262626;
+    --fundo-da-barra-superior: #3f3f3f;
+    --fonte-principal: 'Montserrat', sans-serif;
+    --cor-do-icone-menu-hamburguer: #ffffff;
+    --fundo-do-menu-hamburguer: #262626;
+    --fundo-do-menu-horizontal: #3f3f3f;
+    --fundo-do-menu-hamburguer-hover: #3f3f3f;
+    --fundo-do-menu-horizontal-hover: #262626;
+    --cor-da-fonte-do-menu: #e53993;
+    --cor-da-fonte-titulo-banner: #e53993;
+    --cor-da-fonte-texto-principal-banner: #ffffff;
+    --cor-da-fonte-texto-secundario-banner: #e53993;
+    --fundo-do-botao-banner: #e53993;
+    --fundo-do-botao-banner-hover: #c42d83;
+    --cor-da-fonte-botao-banner: #ffffff;
+    --cor-da-fonte-aviso-banner: #ffffff;
+    --fundo-secao-planos: #262626;
+    --cor-da-fonte-do-titulo-secao-planos: #e53993;
+    --cor-da-fonte-descricao-secao-planos: #ffffff;
+    --fundo-plano-white: #ffffff;
+    --fundo-plano-pink: #e53993;
+    --fundo-botao-pp: #ffffff;
+    --fundo-botao-pp-hover: #ededed;
+    --fundo-botao-pw: #e53993;
+    --fundo-botao-pw-hover: #c42d83;
+    --cor-da-borda-planos: #3f3f3f;
+    --cor-da-fonte-pw: #e53993;
+    --cor-da-fonte-pp: #ffffff;
+    --fundo-secao-localizacao: #e53993;
+    --cor-da-fonte-do-titulo-secao-localizacao: #ffffff;
+    --cor-da-fonte-do-endereco: #ffffff;
+    --fundo-secao-contato: #ffffff;
+    --cor-da-fonte-do-titulo-secao-contato: #262626;
+    --cor-da-fonte-formulario-secao-contato: #262626;
+    --cor-da-fonte-botao-secao-contato: #ffffff;
+    --fundo-botao-secao-contato: #e53993;
+    --cor-da-borda-inputs-secao-contato: #e53993;
+    --fundo-botao-secao-contato-hover: #c42d83;
+    --fundo-secao-copyright: #e53993;
+    --cor-da-fonte-secao-copyright: #ffffff;
+    --fundo-informacoes: #ffffff;
+    --cor-da-fonte-secao-informacoes: #262626;
+    --cor-do-link-secao-informacoes: #e53993;
+    --cor-do-link-secao-informacoes-hover: #c42d83;
+    --fundo-rodape: #3f3f3f;
+    --cor-da-fonte-rodape-texto: #ffffff;
+    --cor-dos-icones-rodape: #e53993;
+    --cor-dos-icones-rodape-hover: #e53993;
+    --cor-link-topo: #ffffff;
+    --cor-de-fundo-link-topo: #262626;
+    --sombra-link-topo: #262626;
+}
+
+body {
+    background-color: var(--fundo-principal);
+    font-family: var(--fonte-principal);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1em;
+}
+
+#link-topo {
+    text-decoration: none;
+    position: fixed;
+    right: 1em;
+    bottom: 1em;
+    box-shadow: 0.20em 0.20em 0.25em var(--sombra-link-topo);
+    background-color: var(--cor-de-fundo-link-topo);
+    padding: 1em;
+}
+
+.bi-arrow-up-circle-fill {
+    fill: var(--cor-link-topo);
+}

@@ -1,0 +1,104 @@
+#selecionar-menu {
+    display: none;
+}
+
+#icone {
+    position: flex;
+    z-index: 1;
+    padding: 1em;
+    cursor: pointer;
+}
+
+.menu-hamburguer {
+    width: 15.625em;
+    height: 100%;
+    background-color: var(--fundo-do-menu-hamburguer);
+    position: absolute;
+    left: -15.625em;
+}
+
+nav {
+    width: 100%; /* 250px ou 15.625em */
+    position: absolute;
+    top: 4em;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    padding: 1em;
+    margin-bottom: 0.125em;
+    transition: all .2s linear;
+}
+
+nav ul li a {
+    color: var(--cor-da-fonte-do-menu);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: .1em;
+}
+
+nav ul li:hover {
+    background-color: var(--fundo-do-menu-hamburguer-hover);
+}
+
+#selecionar-menu:checked ~ .menu-hamburguer {
+    transform: translateX(15.625em);
+    transition: all .4s;
+}
+
+.menu-horizontal {
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+    .menu-hamburguer {
+        display: none;
+    }
+
+    #selecionar-menu {
+        display: none;
+    }
+
+    #icone {
+        display: none;
+    }
+
+    .menu-horizontal {
+        background-color: var(--fundo-do-menu-horizontal);
+        display: flex;
+        justify-content: center;
+    }
+
+    .menu-horizontal__caixa {
+        display: inline;
+    }
+
+    .menu-horizontal__link {
+        text-decoration: none;
+        color: var(--cor-da-fonte-do-menu);
+        font-weight: 700;
+        font-style: normal;
+        text-transform: uppercase;
+        font-size: var(--tamanho-da-fonte-dos-menus);
+        line-height: 2em;
+        padding: 1em;
+    }
+
+    .menu-horizontal__link:hover {
+        background-color: var(--fundo-do-menu-horizontal-hover);
+        padding: 1em;
+        line-height: 2em;
+        transition: all 0.6s ease;
+        -o-transition: all 0.6s ease;
+        -moz-transition: all 0.6s ease;
+        -webkit-transition: all 0.6s ease;
+    }
+
+    .menu-horizontal__item {
+        display: inline-flex;
+    }
+}

@@ -1,0 +1,61 @@
+.container-localizacao {
+    background-color: var(--fundo-secao-localizacao);
+}
+
+.container-localizacao__titulo {
+    font-size: 1.5em;
+    line-height: 1.5em;
+    font-weight: 700;
+    color: var(--cor-da-fonte-do-titulo-secao-localizacao);
+    text-align: center;
+    display: grid;
+    grid-template-columns: 100%;
+    padding: 1em 0 1em 0;
+}
+
+.container-localizacao__endereco {
+    font-size: 0.85em;
+    line-height: 1.2em;
+    font-weight: 500;
+    color: var(--cor-da-fonte-do-endereco);
+    text-align: center;
+    display: grid;
+    grid-template-columns: 100%;
+    padding: 0 2em 2em 2em;
+}
+
+.container-localizacao__mapa {
+    text-align: center;
+    padding: 0 0 1em 0;
+}
+
+.container-localizacao__caixa {
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (min-width: 1024px) {
+    .container-localizacao__caixa {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        gap: 0;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container-localizacao__endereco {
+        font-size: 1em;
+        line-height: 1.2em;
+        text-align: left;
+        display: grid;
+        grid-template-columns: 50%;
+    }
+
+    .container-localizacao__mapa {
+        text-align: right;
+    }
+    
+}
